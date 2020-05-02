@@ -42,6 +42,9 @@ services:
         environment:
             - MONGODB_PORT_27017_TCP_ADDR=mongodb
             - JUDGE_HOST=http://192.168.0.30:8888
+            - OJ_HOME=/$GOPATH/src
+            - DATA_PATH=$OJ_HOME/Data
+            - LOG_PATH=$OJ_HOME/log
         networks:
             ojnet:
                 ipv4_address: 192.168.0.30
