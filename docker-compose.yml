@@ -2,7 +2,7 @@ version: '2'
 services:
     goonlinejudge:
         hostname: oj
-        image: clarkzjw/goonlinejudge
+        image: happier233/goonlinejudge
         networks:
             ojnet:
                 ipv4_address: 192.168.0.10
@@ -38,7 +38,7 @@ services:
 
     runserver:
         hostname: runserver
-        image: clarkzjw/runserver
+        image: happier233/runserver
         environment:
             - MONGODB_PORT_27017_TCP_ADDR=mongodb
             - JUDGE_HOST=http://192.168.0.30:8888
