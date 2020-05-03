@@ -10,6 +10,7 @@ services:
             - "8080:8080"
         restart: always
         environment:
+#            - TZ=Asia/Shanghai
             - MONGODB_PORT_27017_TCP_ADDR=mongodb
             - JUDGE_HOST=http://192.168.0.30:8888
         links:
@@ -40,6 +41,7 @@ services:
         hostname: runserver
         image: happier233/runserver
         environment:
+#            - TZ=Asia/Shanghai
             - MONGODB_PORT_27017_TCP_ADDR=mongodb
             - JUDGE_HOST=http://192.168.0.30:8888
             - OJ_HOME=/$GOPATH/src
