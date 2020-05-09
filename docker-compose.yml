@@ -21,6 +21,7 @@ services:
             - ./log:/go/src/log
             - ./run:/go/src/run
             - ./DBData:/data/db
+            - ./img:/go/src/github.com/ZJGSU-ACM/GoOnlineJudge/static/img
 
     mongodb:
         hostname: mongodb
