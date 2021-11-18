@@ -2,7 +2,7 @@ version: '2'
 services:
     goonlinejudge:
         hostname: oj
-        image: happier233/goonlinejudge
+        image: 998244353/goonlinejudge
         networks:
             ojnet:
                 ipv4_address: 192.168.0.10
